@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="manifest" href="manifest.json">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards by LEOLEO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cards</h1>
+    <h4>by LEOLEO</h4>
+
+    <!-- Menu -->
+    <div id="menu">
+        <button id="add-mode-btn">Add Question & Answer</button>
+        <button id="cards-mode-btn">Cards</button>
+    </div>
+
+    <!-- Add Question -->
+    <div id="add-mode" class="hidden">
+        <h2>Add Question & Answer</h2>
+        <input type="text" id="question" placeholder="Enter Question">
+        <input type="text" id="optionA" placeholder="Option A">
+        <input type="text" id="optionB" placeholder="Option B">
+        <input type="text" id="optionC" placeholder="Option C">
+        <input type="text" id="optionD" placeholder="Option D">
+        <input type="text" id="correct-answer" placeholder="Correct Answer (A, B, C, or D)">
+        <button id="save-btn">Save Question</button>
+        <button id="back-btn">Back to Menu</button>
+    </div>
+
+    <!-- Cards Mode -->
+    <div id="cards-mode" class="hidden">
+        <h2>Quiz Mode</h2>
+        <p>Correct: <span id="correct-count">0</span></p>
+        <p>Wrong: <span id="wrong-count">0</span></p>
+        <p>Remaining: <span id="remaining-count">0</span></p>
+        <div id="quiz-container">
+            <p id="quiz-question"></p>
+            <div id="options-container"></div>
+        </div>
+        <button id="next-btn" class="hidden">Next</button>
+        <button id="cards-back-btn">Back to Menu</button>
+    </div>
+
+    <!-- Congrats -->
+    <div id="congrats" class="hidden">
+        <h2>Congratulations! You've answered all questions correctly!</h2>
+        <button id="again-btn">Try Again</button>
+        <button id="congrats-back-btn">Back to Menu</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
