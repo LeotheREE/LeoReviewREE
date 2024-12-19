@@ -58,6 +58,19 @@ input {
 /* Quiz Styling */
 #quiz-container {
     text-align: center;
+    margin-top: 20px; /* Adds space after the "remaining" text */
+}
+
+#quiz-question {
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Centered text */
+    margin: 20px auto; /* Adds space above and below the question */
+    padding: 15px; /* Adds space inside the border */
+    border: 2px solid #6a5acd; /* Adds a solid border */
+    border-radius: 10px; /* Optional: Rounds the corners of the border */
+    background-color: #ffffff; /* Optional: Adds a white background */
+    max-width: 600px; /* Optional: Limits the width of the question box */
+    font-size: 1.5rem; /* Adjusts the font size */
 }
 
 #options-container button {
@@ -78,14 +91,6 @@ input {
 #options-container button:hover {
     background-color: #6a5acd;
     color: white;
-}
-
-/* Adjusted Question Styling */
-#quiz-question {
-    font-weight: bold; /* Bold text */
-    text-align: center; /* Centered text */
-    margin-bottom: 20px; /* Space after the question */
-    font-size: 1.5rem; /* Optional font size adjustment */
 }
 
 .correct {
