@@ -80,6 +80,14 @@ input {
     color: white;
 }
 
+/* Adjusted Question Styling */
+#quiz-question {
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Centered text */
+    margin-bottom: 20px; /* Space after the question */
+    font-size: 1.5rem; /* Optional font size adjustment */
+}
+
 .correct {
     background-color: #38a169 !important;
     color: white;
